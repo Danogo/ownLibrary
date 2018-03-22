@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Greetr.js</title>
   </head>
   <body>
+    <header>
+      <h3>
+        Welcome
+      </h3>
+     </header>
+    <form action="#">
+      <select name="lang" id="lang">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="pl">Polski</option>
+      </select>
+      <input type="button" value="Login" id="login">
+    </form>
+    <div class="greeting"></div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/greetr/greetr.js"></script>
     <script src="js/script.js"></script>
