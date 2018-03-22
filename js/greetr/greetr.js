@@ -78,11 +78,9 @@
       return this;
     },
 
-    jqGreeting: function(selector, formal) {
+    jQGreet: function(selector, formal) {
       formal = formal || false;
-      var msg, lang;
-      lang = document.getElementById('lang').value;
-      this.language = lang;
+      var msg;
       msg = this.greet(formal);
       $(selector).html(msg);
       return this;
@@ -98,7 +96,7 @@
     self.firstname = firstname || '';
     self.lastname = lastname || '';
     self.language = language || 'en';
-    //checking if passed in language is valid
+    //checking if passed in argument for language is valid
     self.validate();
   };
 
