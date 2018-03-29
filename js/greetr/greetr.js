@@ -100,8 +100,12 @@
     self.validate();
   };
 
-  //Every new created object's prototype is prototype method(not __proto__ of this function!) of function which created him
-  // Here we're overwriting prototype method of function constructor with our object with methods and properites we want new created object to have acces to
+  //Every new created object's prototype is 'prototype' property of function which created him
+  //This prototype property which every declared function has is empty object at the beginning. 
+  //It waits for using that function as a function constructor to point new created object's prototype to this property. 
+  //It is not __proto__ of this function!
+
+  // Here we're overwriting prototype property of function constructor with our object with methods and properites we want new created object to have acces to
   Greetr.init.prototype = Greetr.prototype;
 
   //exposing our function to global object, window in this case
