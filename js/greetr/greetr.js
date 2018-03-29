@@ -39,6 +39,7 @@
     },
 
     greeting: function() {
+      //retrieving greeting string using bracket notation
       return greetings[this.language] + ' ' + this.firstname + '!';
     },
 
@@ -110,4 +111,4 @@
 
   //exposing our function to global object, window in this case
   global.Greetr = global.G$ = Greetr;
-}( window, jQuery));
+}( window, jQuery)); //end of IIFE
